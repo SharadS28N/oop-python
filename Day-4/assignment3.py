@@ -1,34 +1,23 @@
 class Greeter:
-	def __init__(self, name):
-		self.name = name
-
-	def greet(self):
-		print(f"Hello, my name is {self.name}!")
+	def greet(self, name):
+		print(f"Hello, my name is {name}!")
 
 
 class Rectangle:
-	def __init__(self, width, height):
-		self.width = width
-		self.height = height
-
-	def area(self):
-		return self.width * self.height
+	def area(self, width, height):
+		return width * height
 
 
 class BankAccount:
-	def __init__(self, balance):
-		self.balance = balance
+	def check_balance(self, balance):
+		print(balance)
 
-	def check_balance(self):
-		print(self.balance)
+greeter = Greeter()
+greeter.greet("Abishek Magar")
 
-greeter = Greeter("Abishek Magar")
-greeter.greet()
+rectangle = Rectangle()
+print("Area of rectangle:", rectangle.area(5, 3))
 
-rectangle = Rectangle(5, 3)
-print("Area of rectangle:", rectangle.area())
-
-account = BankAccount(1000)
-account.check_balance()
-account.balance += 500
-account.check_balance()
+account = BankAccount()
+account.check_balance(1000)
+account.check_balance(1500)

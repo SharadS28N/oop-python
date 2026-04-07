@@ -5,8 +5,8 @@ class Book:
 		self.pages = pages
 
 
-book1 = Book("1984", "George Orwell", 328)
-book2 = Book("To Kill a Mockingbird", "Harper Lee", 281)
+book1 = Book("Harry Potter", "J.K. Rowling", 328)
+book2 = Book("The Chronicles of Narnia", "C.S. Lewis", 281)
 
 print(f"Book 1: {book1.title}, {book1.author}, {book1.pages} pages")
 print(f"Book 2: {book2.title}, {book2.author}, {book2.pages} pages")

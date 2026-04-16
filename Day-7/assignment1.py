@@ -64,6 +64,7 @@ account1 = BankAccount(100)
 account2 = BankAccount(50)
 account1.transfer(account2, 30)
 print(account1.balance)
+print(account2.balance)
 
 # Library
 library = Library()
